@@ -1,0 +1,25 @@
+# Get started
+First, install it on your project.
+```sh copy
+pnpm add @dbots/node
+```
+
+Get your api key [here](https://dbotslist.lol/bot/ID) (REPLACE "ID" WITH YOUR ACTUAL BOT'S ID)
+
+And initialize it.
+```ts
+import { Client as DbotsClient } from "@dbots/node";
+
+const dbotsClient = new DbotsClient({
+    apiKey: "YOUR_API_KEY"
+})
+
+const main = async () => {
+    await dbotsClient.postGuildCount(/** Your logic here */);
+}
+
+main()
+```
+> This is a mocked example, you may adapt it to your actual code.
+
+That's it! You just posted your bot's guild count to the website!
